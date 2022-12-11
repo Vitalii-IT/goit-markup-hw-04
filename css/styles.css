@@ -7,8 +7,8 @@
   --hero-bcg: #c4c4c4;
   --secondary-white: #f5f4fa;
   --lower-contacts: rgba(255, 255, 255, 0.6);
-  --lower-bgc: #2F303A;
-  --icons-color:#AFB1B8;
+  --lower-bgc: #2f303a;
+  --icons-color: #afb1b8;
 }
 
 body {
@@ -136,7 +136,7 @@ body {
   height: 16px;
   margin-right: 10px;
   fill: var(--primary-text-color);
-  fill: currentColor
+  fill: currentColor;
 }
 
 .icon-envelope {
@@ -145,7 +145,6 @@ body {
   margin-right: 10px;
   fill: currentColor;
 }
-
 
 /* MAIN */
 
@@ -345,45 +344,45 @@ img {
   height: 44px;
 }
 
-.member-contacts .item:hover {
+.member-contacts .sociallink:hover,
+.member-contacts .sociallink:focus {
   border-radius: 50%;
   background-color: var(--accent-color);
+  color: var(--bcg-color);
 }
 
 .sociallink {
-  display:block;
+  display: block;
   height: 44px;
+  color: var(--icons-color);
 }
 
 .sociallink .icons {
   padding: 12px;
-  fill: var(--icons-color)
-}
-
-.sociallink .icons:hover{
-  fill: var(--bcg-color);
+  fill: currentColor;
 }
 
 /* Постійні Клієнти */
 
-.clients-list{
+.clients-list {
   display: flex;
   justify-content: space-between;
 }
 
 .clients-list .link {
-  display:block;
+  display: block;
   width: 170px;
   height: 92px;
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
   padding: 16px 32px;
-  color: var(--icons-color)
+  color: var(--icons-color);
 }
 
-.clients-list .link:hover {
-color: var(--accent-color);
-border: 1px solid var(--accent-color);
+.clients-list .link:hover,
+.clients-list .link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .clients-icon {
@@ -392,25 +391,24 @@ border: 1px solid var(--accent-color);
   fill: currentColor;
 }
 
-.ya{
+.ya {
   padding: 7px 33px 6.3px 32px;
 }
-.tagline-company{
+.tagline-company {
   padding: 3px 33px 5px 33px;
 }
-.group{
-  padding: 8.7px 32.86px 10.12px 29.68px
+.group {
+  padding: 8.7px 32.86px 10.12px 29.68px;
 }
-.foster{
-  padding: 8.7px 10.56px 10.68px 11px
+.foster {
+  padding: 8.7px 10.56px 10.68px 11px;
 }
-.brand{
+.brand {
   padding: 6.77px 21.46px 7.8px 22px;
 }
-.company-tag{
+.company-tag {
   padding: 6.77px 6.21px 9.31px 6px;
 }
-
 
 /* Футер */
 
@@ -465,30 +463,44 @@ border: 1px solid var(--accent-color);
   margin-bottom: 9px;
 }
 
-.social{
+.social {
   margin-left: 95px;
 }
 
 .connect {
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-text-transform: uppercase;
-color: var(--bcg-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--bcg-color);
 }
 
 .social-list {
-display: flex;
+  display: flex;
 }
 
 .social-list .item {
-  padding: 12px;
   margin-right: 10px;
+}
+
+.social-list .item:last-child {
+  margin-right: 0px;
+}
+
+.social-list .link {
+  display: block;
+  padding: 12px;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
+
+.social-list .link:hover,
+.social-list .link:focus {
+  background-color: var(--accent-color);
+}
+
 /* PORTFOLIO STYLES */
 
 .visually-hidden {
@@ -546,6 +558,12 @@ display: flex;
   flex-basis: calc((100% - 60px) / 3);
 }
 
+.works .item:hover,
+.works .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .card-border {
   border-left: 1px solid rgba(238, 238, 238, 1);
   border-right: 1px solid rgba(238, 238, 238, 1);
@@ -577,21 +595,9 @@ display: flex;
   color: var(--primary-text-color);
 }
 
-
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
-
-/* .features-title {
-  margin-top: 0;
-  margin-bottom: 10px;
-
-  color: var(--secondary-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-} */
