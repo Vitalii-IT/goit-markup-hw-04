@@ -7,6 +7,8 @@
   --hero-bcg: #c4c4c4;
   --secondary-white: #f5f4fa;
   --lower-contacts: rgba(255, 255, 255, 0.6);
+  --lower-bgc: #2F303A;
+  --icons-color:#AFB1B8;
 }
 
 body {
@@ -129,6 +131,22 @@ body {
   color: var(--accent-color);
 }
 
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+  fill: currentColor
+}
+
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+
 /* MAIN */
 
 .hero {
@@ -219,33 +237,16 @@ button {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.features .item::before {
-  display: block;
-  content: '';
+.icon-cont {
   height: 120px;
-  outline: solid 1px red;
-  /*  */
-
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: var(--secondary-white);
   margin-bottom: 30px;
 }
 
-.icon-antenna::before {
-  background-image: url(../images/antenna\ 1.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock\ 1.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram\ 1.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/astronaut\ 1.svg);
+.button-icon {
+  margin: 25px 100px;
+  width: 70px;
+  height: 70px;
 }
 
 .features-title {
@@ -333,13 +334,95 @@ img {
   line-height: 1.19;
 }
 
+.member-contacts {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 32px 0px 32px;
+}
+
+.member-contacts .item {
+  width: 44px;
+  height: 44px;
+}
+
+.member-contacts .item:hover {
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+
+.sociallink {
+  display:block;
+  height: 44px;
+}
+
+.sociallink .icons {
+  padding: 12px;
+  fill: var(--icons-color)
+}
+
+.sociallink .icons:hover{
+  fill: var(--bcg-color);
+}
+
+/* Постійні Клієнти */
+
+.clients-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-list .link {
+  display:block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  padding: 16px 32px;
+  color: var(--icons-color)
+}
+
+.clients-list .link:hover {
+color: var(--accent-color);
+border: 1px solid var(--accent-color);
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+.ya{
+  padding: 7px 33px 6.3px 32px;
+}
+.tagline-company{
+  padding: 3px 33px 5px 33px;
+}
+.group{
+  padding: 8.7px 32.86px 10.12px 29.68px
+}
+.foster{
+  padding: 8.7px 10.56px 10.68px 11px
+}
+.brand{
+  padding: 6.77px 21.46px 7.8px 22px;
+}
+.company-tag{
+  padding: 6.77px 6.21px 9.31px 6px;
+}
+
+
 /* Футер */
+
+.lower-content {
+  display: flex;
+}
 
 .lower {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-color: var(--hero-bcg);
+  background-color: var(--lower-bgc);
 }
 
 .logo-white {
@@ -382,6 +465,30 @@ img {
   margin-bottom: 9px;
 }
 
+.social{
+  margin-left: 95px;
+}
+
+.connect {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--bcg-color);
+}
+
+.social-list {
+display: flex;
+}
+
+.social-list .item {
+  padding: 12px;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
 /* PORTFOLIO STYLES */
 
 .visually-hidden {
@@ -470,9 +577,21 @@ img {
   color: var(--primary-text-color);
 }
 
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
+
+/* .features-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+} */
