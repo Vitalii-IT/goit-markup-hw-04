@@ -115,6 +115,9 @@ body {
 }
 
 .contacts .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -237,13 +240,15 @@ button {
 }
 
 .icon-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 120px;
   background-color: var(--secondary-white);
   margin-bottom: 30px;
 }
 
 .button-icon {
-  margin: 25px 100px;
   width: 70px;
   height: 70px;
 }
@@ -335,8 +340,9 @@ img {
 
 .member-contacts {
   display: flex;
-  justify-content: space-between;
-  margin: 16px 32px 0px 32px;
+  justify-content: center;
+  margin: 16px 0 0 0;
+  gap: 10px;
 }
 
 .member-contacts .item {
@@ -352,13 +358,14 @@ img {
 }
 
 .sociallink {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 44px;
   color: var(--icons-color);
 }
 
 .sociallink .icons {
-  padding: 12px;
   fill: currentColor;
 }
 
@@ -370,12 +377,14 @@ img {
 }
 
 .clients-list .link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
-  padding: 16px 32px;
+
   color: var(--icons-color);
 }
 
@@ -414,6 +423,7 @@ img {
 
 .lower-content {
   display: flex;
+  align-items: baseline;
 }
 
 .lower {
@@ -488,8 +498,9 @@ img {
 }
 
 .social-list .link {
-  display: block;
-  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
